@@ -1,0 +1,20 @@
+#include "../src/program.h"
+#include "../src/opcodes/assign_opcode.h"
+#include "../src/opcodes/goto_opcode.h"
+#include "../src/opcodes/print_opcode.h"
+#include "../src/opcodes/halt_opcode.h"
+
+int main(int argc, const char *argv[]) {
+	Program program;
+
+	program.add_opcode(new AssignOpcode("x", 2));
+	program.add_opcode(new GotoOpcode("skip"));
+	program.add_opcode(new AssignOpcode("x", 99));
+	program.add_marker("skip");
+	program.add_opcode(new PrintOpcode("x"));
+	program.add_opcode(new HaltOpcode());
+
+	program.execute();
+
+	return 0;
+}
