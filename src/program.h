@@ -10,6 +10,7 @@
 class Program {
   public:
     std::map<std::string, int> memory;
+
   	Program();
 
   	void add_opcode(Opcode *opcode);

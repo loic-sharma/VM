@@ -15,7 +15,7 @@ void Program::add_opcode(Opcode *opcode) {
 	opcodes.push_back(opcode);
 }
 
-void Program::add_marker(sdt::string marker) {
+void Program::add_marker(std::string marker) {
 	markers[marker] = opcodes.size();
 }
 

@@ -11,7 +11,7 @@ int main(int argc, const char *argv[]) {
 	program.add_opcode(new AssignOpcode("y", 3));
 	program.add_opcode(new AddOpcode("z", "x", "y"));
 	program.add_opcode(new PrintOpcode("z"));
-	program.add_opcode(new Halt());
+	program.add_opcode(new HaltOpcode());
 
 	program.execute();
 
