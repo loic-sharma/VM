@@ -9,12 +9,14 @@
 class Program {
   public:
   	void add_opcode(Opcode *opcode);
+  	void add_marker(std::string marker);
   	void execute();
 
   	~Program();
 
   private:
   	std::vector<Opcode *> opcodes;
+  	std::map<std::string, int> markers;
   	std::map<std::string, int> memory;
 };
 
