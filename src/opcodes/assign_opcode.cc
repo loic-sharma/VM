@@ -11,6 +11,6 @@ std::string AssignOpcode::get_name() {
 	return "assign";
 }
 
-void AssignOpcode::execute(std::map<std::string, int> *memory) {
-	memory->operator[](variable) = value;
+void AssignOpcode::execute(Program *program) {
+	program->memory.operator[](variable) = value;
 }

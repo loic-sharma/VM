@@ -11,9 +11,9 @@ std::string AddOpcode::get_name() {
 	return "add";
 }
 
-void AddOpcode::execute(std::map<std::string, int> *memory) {
-	int firstValue = memory->operator[](first);
-	int secondValue = memory->operator[](second);
+void AddOpcode::execute(Program *program) {
+	int firstValue = program->memory.operator[](first);
+	int secondValue = program->memory.operator[](second);
 
-	memory->operator[](destination) = firstValue + secondValue;
+	program->memory.operator[](destination) = firstValue + secondValue;
 }

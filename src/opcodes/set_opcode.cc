@@ -11,6 +11,6 @@ std::string SetOpcode::get_name() {
 	return "set";
 }
 
-void SetOpcode::execute(std::map<std::string, int> *memory) {
-	memory->operator[](destination) = memory->operator[](source);
+void SetOpcode::execute(Program *program) {
+	program->memory.operator[](destination) = program->memory.operator[](source);
 }

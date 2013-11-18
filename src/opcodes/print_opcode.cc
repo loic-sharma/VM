@@ -12,6 +12,6 @@ std::string PrintOpcode::get_name() {
 	return "print";
 }
 
-void PrintOpcode::execute(std::map<std::string, int> *memory) {
-	std::cout << memory->at(variable) << std::endl;
+void PrintOpcode::execute(Program *program) {
+	std::cout << program->memory.at(variable) << std::endl;
 }

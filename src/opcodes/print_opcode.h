@@ -14,7 +14,7 @@ class PrintOpcode : public Opcode {
   	int get_id();
   	std::string get_name();
 
-  	void execute(std::map<std::string, int> *memory);
+  	void execute(Program *program);
 
    private:
   	std::string variable;
