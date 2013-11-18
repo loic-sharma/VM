@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "../Program.h"
+
 PrintOpcode::PrintOpcode(std::string v) : variable(v) {}
 
 void PrintOpcode::execute(Program *program) {
