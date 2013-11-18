@@ -11,9 +11,6 @@ class PrintOpcode : public Opcode {
   	PrintOpcode(std::string variable);
   	~PrintOpcode() {}
 
-  	int get_id();
-  	std::string get_name();
-
   	void execute(Program *program);
 
    private:

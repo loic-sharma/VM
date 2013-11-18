@@ -11,9 +11,6 @@ class AddOpcode : public Opcode {
   	AddOpcode(std::string destination, std::string first, std::string second);
   	~AddOpcode() {}
 
-  	int get_id();
-  	std::string get_name();
-
   	void execute(Program *program);
 
    private:

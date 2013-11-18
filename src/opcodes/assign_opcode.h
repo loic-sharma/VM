@@ -11,9 +11,6 @@ class AssignOpcode : public Opcode {
   	AssignOpcode(std::string variable, int value);
   	~AssignOpcode() {}
 
-  	int get_id();
-  	std::string get_name();
-
   	void execute(Program *program);
 
    private:

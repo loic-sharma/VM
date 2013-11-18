@@ -11,9 +11,6 @@ class SetOpcode : public Opcode {
   	SetOpcode(std::string destination, std::string source);
   	~SetOpcode() {}
 
-  	int get_id();
-  	std::string get_name();
-
   	void execute(Program *program);
 
    private:
