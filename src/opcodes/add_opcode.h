@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "opcode.h"
+#include "opcodes/opcode.h"
 
 class AddOpcode : public Opcode {
   public:

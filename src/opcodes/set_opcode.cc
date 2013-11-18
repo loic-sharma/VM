@@ -1,6 +1,6 @@
-#include "set_opcode.h"
+#include "opcodes/set_opcode.h"
 
-#include "../Program.h"
+#include "program.h"
 
 SetOpcode::SetOpcode(std::string dest, std::string src)
 	: destination(dest), source(src) {}

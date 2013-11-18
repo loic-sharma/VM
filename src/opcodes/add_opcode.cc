@@ -1,6 +1,6 @@
-#include "add_opcode.h"
+#include "opcodes/add_opcode.h"
 
-#include "../Program.h"
+#include "program.h"
 
 AddOpcode::AddOpcode(std::string dest, std::string one, std::string two)
 	: destination(dest), first(one), second(two) {}

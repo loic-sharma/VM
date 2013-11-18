@@ -1,8 +1,8 @@
-#include "../src/program.h"
-#include "../src/opcodes/assign_opcode.h"
-#include "../src/opcodes/if_opcode.h"
-#include "../src/opcodes/print_opcode.h"
-#include "../src/opcodes/halt_opcode.h"
+#include "program.h"
+#include "opcodes/assign_opcode.h"
+#include "opcodes/if_opcode.h"
+#include "opcodes/print_opcode.h"
+#include "opcodes/halt_opcode.h"
 
 int main(int argc, const char *argv[]) {
 	Program program;

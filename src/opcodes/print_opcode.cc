@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "../Program.h"
+#include "program.h"
 
 PrintOpcode::PrintOpcode(std::string v) : variable(v) {}
 

@@ -1,6 +1,6 @@
-#include "assign_opcode.h"
+#include "opcodes/assign_opcode.h"
 
-#include "../Program.h"
+#include "program.h"
 
 AssignOpcode::AssignOpcode(std::string var, int val)
 	: variable(var), value(val) {}
