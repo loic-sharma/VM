@@ -2,7 +2,6 @@
 #define VM_OPCODE_ASSIGN_OPCODE_H_
 
 #include <string>
-#include <map>
 
 #include "opcode.h"
 
