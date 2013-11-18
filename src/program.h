@@ -8,13 +8,19 @@
 
 class Program {
   public:
+  	Program();
+
   	void add_opcode(Opcode *opcode);
   	void add_marker(std::string marker);
   	void execute();
+  	void stop();
 
   	~Program();
 
   private:
+  	bool executing;
+  	int position;
+
   	std::vector<Opcode *> opcodes;
   	std::map<std::string, int> markers;
   	std::map<std::string, int> memory;

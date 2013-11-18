@@ -1,5 +1,10 @@
 #include "program.h"
 
+Program::Program() {
+	executing = false;
+	position = 0;
+}
+
 Program::~Program() {
 	for(int i = 0; i < opcodes.size(); i++) {
 		delete opcodes[i];
@@ -15,7 +20,13 @@ void Program::add_marker(sdt::string marker) {
 }
 
 void Program::execute() {
-	for(int i = 0; i < opcodes.size(); i++) {
-		opcodes[i]->execute(&memory);
+	executing = true;
+
+	while(executing) {
+		opcodes[position]->execute(this);
 	}
+}
+
+void Program::stop() {
+	executing = false;
 }
