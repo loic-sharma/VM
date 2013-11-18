@@ -1,6 +1,6 @@
-#include "opcodes/if_opcode.h"
+#include "vm/opcodes/if_opcode.h"
 
-#include "program.h"
+#include "vm/program.h"
 
 IfOpcode::IfOpcode(std::string exp, std::string m)
 	: expression(exp), marker(m) {}

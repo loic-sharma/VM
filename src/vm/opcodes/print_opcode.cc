@@ -1,8 +1,8 @@
-#include "opcodes/print_opcode.h"
+#include "vm/opcodes/print_opcode.h"
 
 #include <iostream>
 
-#include "program.h"
+#include "vm/program.h"
 
 PrintOpcode::PrintOpcode(std::string v) : variable(v) {}
 

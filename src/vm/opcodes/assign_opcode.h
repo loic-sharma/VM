@@ -1,9 +1,9 @@
-#ifndef VM_OPCODE_ASSIGN_OPCODE_H_
-#define VM_OPCODE_ASSIGN_OPCODE_H_
+#ifndef VM_OPCODES_ASSIGN_OPCODE_H_
+#define VM_OPCODES_ASSIGN_OPCODE_H_
 
 #include <string>
 
-#include "opcodes/opcode.h"
+#include "vm/opcodes/opcode.h"
 
 class AssignOpcode : public Opcode {
   public:

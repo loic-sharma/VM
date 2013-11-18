@@ -1,6 +1,6 @@
-#include "opcodes/halt_opcode.h"
+#include "vm/opcodes/halt_opcode.h"
 
-#include "program.h"
+#include "vm/program.h"
 
 void HaltOpcode::execute(Program *program) {
 	program->stop();

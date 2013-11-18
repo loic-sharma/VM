@@ -1,7 +1,7 @@
-#ifndef VM_OPCODE_HALT_OPCODE_H_
-#define VM_OPCODE_HALT_OPCODE_H_
+#ifndef VM_OPCODES_HALT_OPCODE_H_
+#define VM_OPCODES_HALT_OPCODE_H_
 
-#include "opcodes/opcode.h"
+#include "vm/opcodes/opcode.h"
 
 class HaltOpcode : public Opcode {
   public:

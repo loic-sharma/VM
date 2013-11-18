@@ -1,6 +1,6 @@
-#include "opcodes/goto_opcode.h"
+#include "vm/opcodes/goto_opcode.h"
 
-#include "program.h"
+#include "vm/program.h"
 
 GotoOpcode::GotoOpcode(std::string m) : marker(m) {}
 

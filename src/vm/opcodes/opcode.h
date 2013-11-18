@@ -1,5 +1,5 @@
-#ifndef VM_OPCODE_OPCODE_H_
-#define VM_OPCODE_OPCODE_H_
+#ifndef VM_OPCODES_OPCODE_H_
+#define VM_OPCODES_OPCODE_H_
 
 class Program;
 
