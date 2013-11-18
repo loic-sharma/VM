@@ -14,4 +14,6 @@ std::string PrintOpcode::get_name() {
 
 void PrintOpcode::execute(Program *program) {
 	std::cout << program->memory.at(variable) << std::endl;
+
+	program->increment_position();
 }

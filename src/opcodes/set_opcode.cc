@@ -13,4 +13,6 @@ std::string SetOpcode::get_name() {
 
 void SetOpcode::execute(Program *program) {
 	program->memory.operator[](destination) = program->memory.operator[](source);
+
+	program->increment_position();
 }

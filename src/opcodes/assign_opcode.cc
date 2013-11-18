@@ -13,4 +13,6 @@ std::string AssignOpcode::get_name() {
 
 void AssignOpcode::execute(Program *program) {
 	program->memory.operator[](variable) = value;
+
+	program->increment_position();
 }

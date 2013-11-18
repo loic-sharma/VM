@@ -16,4 +16,6 @@ void AddOpcode::execute(Program *program) {
 	int secondValue = program->memory.operator[](second);
 
 	program->memory.operator[](destination) = firstValue + secondValue;
+
+	program->increment_position();
 }
