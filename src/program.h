@@ -1,6 +1,7 @@
 #ifndef VM_PROGRAM_H_
 #define VM_PROGRAM_H_
 
+#include <string>
 #include <vector>
 #include <map>
 
@@ -8,6 +9,7 @@
 
 class Program {
   public:
+    std::map<std::string, int> memory;
   	Program();
 
   	void add_opcode(Opcode *opcode);
@@ -26,7 +28,6 @@ class Program {
 
   	std::vector<Opcode *> opcodes;
   	std::map<std::string, int> markers;
-  	std::map<std::string, int> memory;
 };
 
 #endif
