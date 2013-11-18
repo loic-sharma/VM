@@ -2,6 +2,7 @@
 #include "../src/opcodes/assign_opcode.h"
 #include "../src/opcodes/set_opcode.h"
 #include "../src/opcodes/print_opcode.h"
+#include "../src/opcodes/halt_opcode.h"
 
 int main(int argc, const char *argv[]) {
 	Program program;
@@ -9,6 +10,7 @@ int main(int argc, const char *argv[]) {
 	program.add_opcode(new AssignOpcode("x", 2));
 	program.add_opcode(new SetOpcode("y", "x"));
 	program.add_opcode(new PrintOpcode("y"));
+	program.add_opcode(new HaltOpcode());
 
 	program.execute();
 
