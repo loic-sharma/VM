@@ -15,8 +15,7 @@ class Program {
   	void execute();
 
   	void increment_position();
-  	void set_position(int position);
-  	int get_position() const;
+  	void goto_marker(std::string);
   	void stop();
 
   	~Program();

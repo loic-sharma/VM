@@ -31,12 +31,8 @@ void Program::increment_position() {
 	position++;
 }
 
-void Program::set_position(int pos) {
-	position = pos;
-}
-
-int Program::get_position() const {
-	return position;
+void Program::goto_marker(std::string marker) {
+	position = markers[marker];
 }
 
 void Program::stop() {
