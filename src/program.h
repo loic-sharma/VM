@@ -13,6 +13,10 @@ class Program {
   	void add_opcode(Opcode *opcode);
   	void add_marker(std::string marker);
   	void execute();
+
+  	void increment_position();
+  	void set_position(int position);
+  	int get_position() const;
   	void stop();
 
   	~Program();
