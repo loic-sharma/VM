@@ -9,26 +9,26 @@
 
 class Program {
   public:
-    std::map<std::string, int> memory;
+	std::map<std::string, int> memory;
 
-  	Program();
+	Program();
 
-  	void add_opcode(Opcode *opcode);
-  	void add_marker(std::string marker);
-  	void execute();
+	void add_opcode(Opcode *opcode);
+	void add_marker(std::string marker);
+	void execute();
 
-  	void increment_position();
-  	void goto_marker(std::string);
-  	void stop();
+	void increment_position();
+	void goto_marker(std::string);
+	void stop();
 
-  	~Program();
+	~Program();
 
   private:
-  	bool executing;
-  	int position;
+	bool executing;
+	int position;
 
-  	std::vector<Opcode *> opcodes;
-  	std::map<std::string, int> markers;
+	std::vector<Opcode *> opcodes;
+	std::map<std::string, int> markers;
 };
 
 #endif
